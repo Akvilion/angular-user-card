@@ -1,0 +1,14 @@
+<div class="country">
+  <p>user country info</p>
+
+
+  <div *ngIf="showInput" (click)="myFunc1()">
+    {{country}}
+  </div>
+
+  <div *ngIf="!showInput">
+    <input [(ngModel)]="country">
+    <button (click)="myFunc()">Ok</button>
+  </div>
+
+</div>

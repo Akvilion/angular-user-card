@@ -1,0 +1,17 @@
+<div class="userinfo">
+  <div class="text">
+    user info block
+  </div>
+
+  <div *ngIf="showInput" (click)="myFunc()">
+    {{userName}} - {{x}}
+  </div>
+  <div *ngIf="!showInput">
+    <input [(ngModel)]="userName">
+    <button (click)="myFunc()">Ok</button>
+  </div>
+
+  <app-country (newItemEvent)="addItem($event)"></app-country>
+
+
+</div>
